@@ -19,17 +19,3 @@ terraform {
          value = "A example resource that again does nothing"
        }
      }
-
-provider "azurerm" {
-  features {}
-}
-
-resource "azurerm_resource_group" "example" {
-  name     = "example-abhinav-rg"
-  location = "West Europe"
-}
-
-import {
-  to = azurerm_resource_group.example
-  id = "/subscriptions/8fdb01dc-7e3e-489e-9d2b-1a89a45d6c13/resourceGroups/example-abhinav-rg"
-}
