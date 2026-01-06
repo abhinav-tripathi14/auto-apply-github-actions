@@ -5,7 +5,7 @@ terraform {
     organization = "Test-Abhinav" 
 
     workspaces { 
-      name = "auto-apply-github-actions" 
+      name = "api-workspace" 
     } 
   } 
 }
